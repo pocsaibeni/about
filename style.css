@@ -107,7 +107,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     padding: 10px 20px;
     margin-right: 20px;
-    border: 2px solid rgb(57, 5, 201);
+    border: 2px solid rgb(5, 90, 201);
     border-radius: 50px;
 }
 .jog{
@@ -118,11 +118,11 @@ nav ul li a:hover::after{
 }
 
 .row1:hover{
-    background-color: rgb(57, 5, 201);
+    background-color: rgb(5, 90, 201);
     transition: 0.5s;
 }
 .row2:hover{
-    background-color: rgb(57, 5, 201);
+    background-color: rgb(5, 90, 201);
     transition: 0.5s;
 }
 .row2:after{
