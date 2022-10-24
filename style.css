@@ -123,4 +123,8 @@ nav ul li a:hover::after{
     transition: 0.5s;
     background-color: none;
 }
+html, body {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
 
