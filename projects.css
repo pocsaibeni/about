@@ -115,7 +115,10 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .text-box a{
-
-    margin-top: 40px;
+    color: blue;
+}
+.text-box h4{
+    margin-top: 10px;
+    display: grid;
 }
 
