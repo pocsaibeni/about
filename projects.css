@@ -114,8 +114,8 @@ nav ul li a:hover::after{
     background-color: rgb(5, 90, 201);
     transition: 0.5s;
 }
-.text-box #projects{
-    color: #fff;
-    text-decoration: none;
+.text-box a{
+
+    margin-top: 40px;
 }
 
