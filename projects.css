@@ -8,7 +8,7 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,1.2),transparent), url(https://w0.peakpx.com/wallpaper/0/969/HD-wallpaper-keyboard-gaming-azul-blue-gamer-laptop-notebook-teclado.jpg);
+    background-image: linear-gradient(rgba(0,0,0,1.2),transparent), url(https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80);
     background-size: cover;
     background-position: center;
     padding: 0 8%;
@@ -74,7 +74,7 @@ nav ul li a:hover::after{
 }
 
 .text-box h1{
-    font-size: 130px;
+    font-size: 110px;
     line-height: 160px;
     margin-left: -10px;
     color: transparent;
@@ -91,7 +91,7 @@ nav ul li a:hover::after{
 }
 
 .text-box h3{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
 }
 
@@ -102,7 +102,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 
-.text-box a{
+.text-box #row{
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -113,5 +113,9 @@ nav ul li a:hover::after{
 #row:hover{
     background-color: rgb(5, 90, 201);
     transition: 0.5s;
+}
+.text-box #projects{
+    color: #fff;
+    text-decoration: none;
 }
 
