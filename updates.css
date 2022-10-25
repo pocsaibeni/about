@@ -74,10 +74,10 @@ nav ul li a:hover::after{
 }
 
 .text-box h1{
-    font-size: 150px;
+    font-size: 70px;
     line-height: 160px;
     margin-left: -10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     background: url(https://tylerrrr.eu/images/mainpage/back.png);
