@@ -139,7 +139,6 @@ nav ul li a:hover::after{
   .particle:after {
     position: absolute;
     content: "";
-    top: 2560px;
   }
   
   .particle-1 {
