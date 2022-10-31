@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+*::before,*::after{
+    box-sizing: inherit;
+  }
 
 .container{
     width: 100%;
@@ -74,7 +77,7 @@ nav ul li a:hover::after{
 }
 
 .text-box h1{
-    font-size: 110px;
+    font-size: 80px;
     line-height: 160px;
     margin-left: -10px;
     color: transparent;
