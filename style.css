@@ -57,7 +57,7 @@ nav ul li a::after{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgb(5, 90, 201);
+    background: #fff;
     transition: width 0.3s;
 }
 
