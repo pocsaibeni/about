@@ -115,11 +115,7 @@ nav ul li a:hover::after{
 }
 
 
-.row2:hover{
-    background: rgb(5, 90, 201);
-    transition: 0.5s;
-}
-.row3:hover{
+.row2:hover,.row3:hover{
     background: rgb(5, 90, 201);
     transition: 0.5s;
 }
