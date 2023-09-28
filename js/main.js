@@ -61,7 +61,7 @@ function _0x3a8a() {
     } catch (t) {
         a.push(a.shift())
     }
-})(), console[_0x35a543(134)]("nigger.bio by grek#0001"),
+})(), console[_0x35a543(134)](),
     function(t, e) {
         for (var n = _0x5ea7, a = _0x3a8a();;) try {
             if (341071 === parseInt(n(268)) / 1 + -parseInt(n(263)) / 2 + -parseInt(n(262)) / 3 * (parseInt(n(264)) / 4) + -parseInt(n(266)) / 5 + parseInt(n(267)) / 6 * (parseInt(n(269)) / 7) + -parseInt(n(265)) / 8 + -parseInt(n(261)) / 9 * (-parseInt(n(260)) / 10)) break;
