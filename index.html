@@ -1,70 +1,199 @@
 
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
- 
-    <meta content="⚡ | The one and only BENI." property="og:title">
-    <meta content="https://atlas-experiences.xyz/images/embed.png" property="og:image">
-    <meta content="#0066ff" data-react-helmet="true" name="theme-color">
-    <meta name="description" content="[ atlas ]">
-    
+
+    <meta content="👑 | The one and only BENI" property="og:title"/>
+
+    <meta content="" property ="og:image"/>
+
+    <meta content="#2b2d31" data-react-helmet="true" name="theme-color"/>
+
+    <meta name="description" content="">
+
+    <meta name="keywords" content="BENI"/>
+
+        
+
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="icon" type="image/x-icon" href="images/embed.png">
+    <link rel="stylesheet" href="css/hover.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vanphonggiang/font-awesome-6-pro/css/all.css"/>
+
+    <link rel="icon" type="image/x-icon" href="">
 
 </head>
+
 <body oncontextmenu="false">
-        <input type="checkbox" autocomplete="off" id="overlay-toggle">
-        <div class="overlay fullscreen">
-            <div id="center">
-            <label for="overlay-toggle" onclick="mediaPlay()">
-                <span class="no-hover" style="font-family: &#x27;Roboto Mono&#x27;, font-size: 30px; monospace; font-size: 0.6em; text-shadow: 0 0 0.40em #0066ff;">[ tap ]</span>
-                <span class="hover" style="font-family: &#x27;Roboto Mono&#x27;, font-size: 30px; monospace; font-size: 0.6em; text-shadow: 0 0 0.40em #0066ff;">[ click ]</span>
-            </label>
-            </div>
-        </div>
-        <audio loop preload="auto" id="audio">
-        <source src="media/audio.mp3" type="audio/mp3">
+
+    <input type="checkbox" autocomplete="off" id="overlay-toggle">
+
+    <div class="overlay fullscreen">
+
+    <div id="center">
+
+    <label for="overlay-toggle" onclick="playSong(currentSongIndex); mediaPlay();">
+
+    <span class="no-hover" style="font-family: 'Roboto Mono', font-size: 30px; monospace; font-size: 0.6em; text-shadow: 0 0 0.40em gray;">[ tap ]</span>
+
+    <span class="hover" style="font-family: 'Roboto Mono', font-size: 30px; monospace; font-size: 0.6em; text-shadow: 0 0 0.40em gray;">[ click ]</span>
+
+    </label>
+
+    </div>
+
+    </div>
+
+    <div id="notification" class="hide">
+
+        <div class="content" id="notification-content"></div>
+
+    </div>
+
+    <audio id="audio" autoplay>
+
     </audio>
-        <video muted="muted" loop playsinline preload="auto" class="fullscreen bg-video" id="video">
-            <source src="media/background.mp4" type="video/mp4">
-        </video>
-        <section class="fullscreen text-content">
+
+    <video muted="muted" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+
+        <source src="media/background.mp4">
+
+    </video>
+
+    <section class="fullscreen text-content">
+
         <div id="center">
-            <h1 style="font-size: 45px; font-family: derk; text-shadow: 0 0 0.40em #0066ff;">I am BENI.</h1>                                                                                         
-        </div> 
+
+            <h1 style="font-size: 45px; font-family: Work Sans, sans-serif; text-shadow: 0 0 0.15em gray;">BENI</h1>                                                                                         
+
+        </div>
+        
         <div id="center">
-            <br><br><br><br>
-            <span id="typed" style="font-size: 20px; font-family: &#x27;Roboto Mono&#x27;, monospace; text-shadow: 0 0 0.10em #0066ff;"></span>
+
+            <br><br><br>
+            <i class="fa-solid fa-code" style="font-size:9px; text-shadow: 0 0 0.15em gray;"></i>
+            <i class="fa-solid fa-cross" style="font-size:9px; text-shadow: 0 0 0.15em gray;"></i>
+            <i class="fa-solid fa-star" style="font-size:9px; text-shadow: 0 0 0.15em gray;"></i>
+        </div>
+
+        <div id="center">
+
+            <br><br><br><br><br>
+
+            <span id="typed" style="font-size: 15px; font-family: 'Roboto Mono', monospace; text-shadow: 0 0 0.15em gray;"></span>
+
         </div> 
 
+        <div id="center">
 
-<script src="js/38359ed66d.js" crossorigin="anonymous">
-</script>
-<script src="js/typed.min.js">
-</script>
-<script src="js/jquery.min.js">
-</script>
-<script src="js/main.js">
-</script>
+            <br><br><br><br><br><br><br>
+
+            <h1 id="audio-info" style="font-size: 10px; font-family: 'Roboto Mono', monospace; text-shadow: 0 0 0.15em gray;">Artist - Title</h1>
+
+        </div>
+
+        <div id="center">
+
+		    <br><br><br><br><br><br><br><br><br>
+
+            <h1 id="audio-time" style="font-size: 9px; font-family: 'Roboto Mono', monospace; text-shadow: 0 0 0.15em gray;">*-–––––––––––––––––––––––––– 00:00</h1>
+
+        </div>
+
+</body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/main.js"></script>
+
 <script protect src="js/protect.js"></script>
+
+<script src ="js/playlist.js"></script>
+
+<script src ="js/notification.js"></script>
+
+<script src ="js/duration.js"></script>
+
+<script src ="js/hover.js"></script>
+
 <script>
-setTyped(false,  ["Welcome to my webpage!"])
-setTitle("☆ ","BENI")
-</script>
-<div id="socials">
-<a href="https://discordapp.com/users/569077690238369802" target="_blank">
-    <i class="fa-brands fa-discord" style="font-size:36px; color: #0066ff"></i>
-</a>
-<a href="https://twitter.com/BENI9166" target="_blank">
-    <i class="fa-brands fa-twitter" style="font-size:36px; color: #0066ff"></i>
-</a>
-<a href="https://www.youtube.com/channel/UCKSzCqQAxCZDUacOlwfieww" target="_blank">
-    <i class="fa-brands fa-youtube" style="font-size:36px; color: #0066ff"></i>
-</a>
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="benii" data-color="#0066ff" data-emoji="🍺"  data-font="Bree" data-text="Buy me a beer" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+
+    setTyped(true, [
+
+        'One and the only BENI',
+        'WebDEV',
+        'Discord Developer',
+    ])
+
+    setTitle("☆"," BENI")
+
+    const playlist = [
+
+        {
+
+        title: "Slayim",
+
+        artist: "beat trava pulmão",
+
+        file: "media/beat trava pulmão [no intro].mp3.mp3"
+
+        },
+        {
+
+        title: "Lieless",
+
+        artist: "ALS DU GINGST",
+
+        file: "media/ALS DU GINGST.mp3"
+
+        }
+    ];
+
+    </script>
+
+<div id="center">
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		    <a href="https://www.youtube.com/channel/UCKSzCqQAxCZDUacOlwfieww" target="_blank" class="hover-text" data-hover-text="@BENI">
+
+    <i class="fa-brands fa-youtube" style="font-size:36px; text-shadow: 0 0 0.15em #FF0000; color: #FF0000;"></i>
+
+	</a>
+
+    <a onclick="setClipboard('pbenii');notification('Név bemásolva a vágólapra');" class="hover-text" data-hover-text="@pbenii">
+
+        <i class="fa-brands fa-discord" style="font-size:36px; text-shadow: 0 0 0.15em #7289da; color: #7289da;"></i>
+
+    </a>
+            <a href="https://www.twitch.tv/beni_4ma" target="_blank" class="hover-text" data-hover-text="@beni_4ma">
+
+         <i class="fa-brands fa-twitch" style="font-size:36px; text-shadow: 0 0 0.15em #6441a5; color: #6441a5;"></i>
+
+    </a>
+    </a>
+		    <a href="https://www.buymeacoffee.com/benii" target="_blank" class="hover-text" data-hover-text="@benii">
+
+        <i class="fa-solid fa-beer" style="font-size:36px; text-shadow: 0 0 0.15em #f28e1c; color: #f28e1c;"></i>
+
+    </a>
+
+
 </div>
-</section></body></html>
