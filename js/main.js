@@ -80,7 +80,7 @@ function setTyped(_0x1f611b, _0x4d6628 = []) {
     new Typed(_0xe74621(0x103), {
         'strings': _0x4d6628,
         'typeSpeed': 0x28,
-        'delaySpeed': 0x5a,
+        'delaySpeed': 0x10a,
         'showCursor': ![],
         'loop': _0x1f611b
     });
