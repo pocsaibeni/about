@@ -324,7 +324,7 @@
                 key: "onDevToolOpen",
                 value: function() {
                     var e;
-                    console.warn("You ar not allow to use DEVTOOL! ÄĹĂ˘ÂĹšĂÂtype = ".concat(this.type, "ÄĹĂ˘ÂĹšĂ˘ÂÂ")), w.clearIntervalWhenDevOpenTrigger && y(), window.clearTimeout($), w.ondevtoolopen(this.type, ee), e = this.type, t[e] = !0
+                    console.warn("Nem vagy alkalmas a tool hasznalatara! ÄĹĂ˘ÂĹšĂÂtype = ".concat(this.type, "ÄĹĂ˘ÂĹšĂ˘ÂÂ")), w.clearIntervalWhenDevOpenTrigger && y(), window.clearTimeout($), w.ondevtoolopen(this.type, ee), e = this.type, t[e] = !0
                 }
             }, {
                 key: "init",
